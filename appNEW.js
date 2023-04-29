@@ -42,15 +42,17 @@ todoList.addEventListener("click", (e) => {
 });
 
 menu.addEventListener("click", () => {
-  const divList = `<span>
-  <div><p>Home</p></div>
-  <div><p>Home</p></div>
-  <div><p>Home</p></div>
+  const divList = `<span class="divList">
+   <div><a href="#home">Home</a></div>
+  <div></div><a href="#home">Todo</a></div>
+  <div></div><a href="#home">SignUp</a></div>
   </span>`;
   // divList.style.display = "flex";
   
-  if(menuSpan.innerHTML !== divList){
+  if(menuSpan.innerHTML == ""){
+    
     menuSpan.innerHTML = divList;
+    
   } else {
     menuSpan.innerHTML = "";
   }
