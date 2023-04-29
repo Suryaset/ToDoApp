@@ -1,6 +1,10 @@
 const todoForm = document.querySelector(".form-todo");
 const todoInput = document.querySelector(".form-todo input[type='text']");
 const todoList = document.querySelector(".todo-list")
+const menu = document.querySelector(".menu");
+const menuSpan = document.querySelector(".span");
+const header = document.querySelector(".headerlist");
+
 // console.log(todoInput);
 
 todoForm.addEventListener("submit", (e) => {
@@ -36,3 +40,19 @@ todoList.addEventListener("click", (e) => {
   }
   
 });
+
+menu.addEventListener("click", () => {
+  const divList = `<span>
+  <div><p>Home</p></div>
+  <div><p>Home</p></div>
+  <div><p>Home</p></div>
+  </span>`;
+  // divList.style.display = "flex";
+  
+  if(menuSpan.innerHTML !== divList){
+    menuSpan.innerHTML = divList;
+  } else {
+    menuSpan.innerHTML = "";
+  }
+
+}); 

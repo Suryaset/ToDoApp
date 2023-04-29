@@ -14,6 +14,7 @@ body{
 .header{
   position: relative;
   height: 55vh;
+  min-width: 375px;
   background: url(./bcgImage.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -72,7 +73,7 @@ a{
 }
 .section-todo{
   width: 70vw;
-  min-width: 440px;
+  min-width: 375px;
   margin-top: 5rem;
   text-align: center;
 }
@@ -142,7 +143,7 @@ a{
 /* >========>> SIGNUP FORM >========>> */
 .section-signup{
   width: 50vw;
-  min-width: 400px;
+  min-width: 375px;
   margin: 5rem auto;
   text-align: center;
   background: rgba(128, 128, 128, 0.542);
@@ -181,4 +182,21 @@ a{
   font-weight: bold;
   margin-top: 1rem;
   border-radius: 5px;
+}
+
+.menu{
+  display: none;
+}
+@media screen and (max-width: 768px){
+  .nav-items{
+    display: none;
+  }
+  .menu{
+    display: flex;
+    flex-direction: row;
+  }
+  .menu i {
+    margin-top: 10px;
+    margin-right: 20px;
+  }
 }
